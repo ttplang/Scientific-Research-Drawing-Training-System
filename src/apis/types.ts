@@ -1,4 +1,4 @@
-import { AxiosRequestConfig, AxiosResponse } from 'axios'
+import type { AxiosRequestConfig, AxiosResponse } from 'axios'
 export interface RequestInterceptors<T = AxiosResponse> {
   //定义扩展接口类型
   requestInterceptor?: (config: AxiosRequestConfig) => AxiosRequestConfig

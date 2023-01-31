@@ -1,6 +1,6 @@
 import { ref } from "vue";
 import { useRouter } from 'vue-router'
-// import { ElMessage  } from "element-plus";
+import { ElMessage  } from "element-plus";
 
 export default () => {
   const router = useRouter();

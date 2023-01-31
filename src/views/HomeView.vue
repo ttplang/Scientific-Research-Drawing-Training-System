@@ -2,7 +2,6 @@
 import VideoThumb from "../components/VideoThumb.vue";
 import TopicThumb from "../components/TopicThumb.vue";
 
-import { get } from "";
 const menu = [
   {
     title: "推荐课程",
@@ -117,9 +116,7 @@ const menu = [
     display: grid;
     grid-template-columns: repeat(4, 300px);
     grid-template-rows: 300px 300px;
-    grid-gap: 15px (80px/3);
-    & > div {
-    }
+    grid-gap: 15px calc(80px/3);
   }
   .p-main {
     display: grid;

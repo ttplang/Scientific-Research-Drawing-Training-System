@@ -1,6 +1,6 @@
 import axios from 'axios'
-import { AxiosInstance } from 'axios'
-import { RequestInterceptors, RequestConfig } from './types'
+import type { AxiosInstance } from 'axios'
+import type { RequestInterceptors, RequestConfig } from './types'
 //将axios封装到类中
 class Request {
   instance: AxiosInstance //axios的实例将被保存到这里
