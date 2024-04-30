@@ -56,7 +56,7 @@ const toDetails = () => {
   flex-wrap: wrap;
   & > div {
     margin-bottom: 30px;
-    margin-right: calc(80px/3);
+    margin-right: (80px/3);
   }
   & > div:nth-child(4n) {
     margin-right: 0;

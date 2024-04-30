@@ -98,56 +98,56 @@ const router = createRouter({
       meta: {
         title: '用户中心',
       },
-      component: () => import("../views/ProfileView/Profile.vue"),
+      component: () => import("../views/ProfileCmpt/Profile.vue"),
       children: [{
         path: "/userCenter",
         name: "userCenter",
         meta: {
           title: '用户中心',
         },
-        component: () => import("../views/ProfileView/UserCenter.vue"),
+        component: () => import("../views/ProfileCmpt/UserCenter.vue"),
       }, {
         path: "/balance",
         name: "balance",
         meta: {
           title: '我的余额',
         },
-        component: () => import("../views/ProfileView/Balance.vue"),
+        component: () => import("../views/ProfileCmpt/Balance.vue"),
       }, {
         path: "/educationalAdministration",
         name: "educationalAdministration",
         meta: {
           title: '教务管理',
         },
-        component: () => import("../views/ProfileView/EducationalAdministration.vue"),
+        component: () => import("../views/ProfileCmpt/educationalAdministration.vue"),
       }, {
         path: "/examination",
         name: "examination",
         meta: {
           title: '我的考试',
         },
-        component: () => import("../views/ProfileView/Examination.vue"),
+        component: () => import("../views/ProfileCmpt/Examination.vue"),
       }, {
         path: "/order",
         name: "order",
         meta: {
           title: '订单管理',
         },
-        component: () => import("../views/ProfileView/Order.vue"),
+        component: () => import("../views/ProfileCmpt/Order.vue"),
       }, {
         path: "/teachingResources",
         name: "teachingResources",
         meta: {
           title: '教学资源',
         },
-        component: () => import("../views/ProfileView/TeachingResources.vue"),
+        component: () => import("../views/ProfileCmpt/TeachingResources.vue"),
       }]
     },
   ],
 });
 
 router.beforeEach(async (_to, _from, _next) => {
-  document.title = _to.meta.title as string;
+  document.title = _to.meta.title;
   _next();
 });
 

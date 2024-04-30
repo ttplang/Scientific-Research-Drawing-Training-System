@@ -7,6 +7,9 @@ import alipay from "@/assets/icons/alipay.png";
 import payCode from '@/assets/icons/paycode.png';
 
 const payment = ref(1);
+const onDecode = (data) => {
+  console.log(data)
+}
 </script>
 <template>
   <div class="pay-container">
