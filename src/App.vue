@@ -64,14 +64,14 @@ const router = useRouter();
   </main>
   <footer>
     <div class="wrapper">
-      <div class="gm-info">
+      <!-- <div class="gm-info">
         &copy; 2023 唐天鹏 ·
         <a
           href="https://beian.miit.gov.cn/?spm=a2c4g.11186623.J_9220772140.111.6f155615Hq3hRb"
           target="_blank"
           >桂ICP备2022009985号</a
         >
-      </div>
+      </div> -->
     </div>
   </footer>
   <el-backtop :right="100" :bottom="100" />
